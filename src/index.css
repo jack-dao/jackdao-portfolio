@@ -102,3 +102,36 @@ body {
 .animate-experienceEnter {
   animation: experienceEnter 0.4s ease-out;
 }
+
+.shooting-star {
+  position: absolute;
+  top: 10%;
+  left: -12%;
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0)
+  );
+  filter: blur(2px);
+  opacity: 0;
+  animation: shooting-star 1.4s ease-out forwards;
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translate3d(0, 0, 0) rotateZ(18deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate3d(120vw, 28vh, 0) rotateZ(18deg);
+    opacity: 0;
+  }
+}
