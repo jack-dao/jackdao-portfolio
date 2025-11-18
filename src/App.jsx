@@ -5,6 +5,9 @@ import About from "./sections/About"
 import Experience from "./sections/Experience"
 import Projects from "./sections/Projects"
 import StarsBackground from "./components/StarsBackground"
+import Skills from "./sections/Skills";
+import Footer from "./components/Footer";
+
 
 export default function App() {
   return (
@@ -21,6 +24,8 @@ export default function App() {
         <About />
         <Experience />
         <Projects />
+        <Skills />
+        <Footer />
       </main>
     </div>
   )

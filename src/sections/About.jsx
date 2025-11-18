@@ -20,7 +20,7 @@ export default function About() {
         <div className="grid gap-8 lg:gap-10 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] items-start">
           {/* text column */}
           <div className="max-w-2xl text-left">
-            <p className="font-display text-[20px] md:text-[22px] leading-[2.1rem] text-[#8892b0]">
+            <p className="font-display text-[24px] md:text-[26px] leading-[2.4rem] text-[#8892b0]">
               I am a third year{" "}
               <span className="font-semibold text-[#a8b2d1]">Computer Science</span> student at{" "}
               <a
@@ -41,62 +41,16 @@ export default function About() {
               >
                 Wilmers Lab
               </a>
-              . I focus on building full stack applications, backend systems, and small tools that
-              actually get used.
+              . I enjoy building things that are simple, useful and reliable, from small tools to full stack applications.
             </p>
 
-            <p className="font-display mt-6 text-[20px] md:text-[22px] leading-[2.1rem] text-[#8892b0]">
-              Outside of classes I like exploring new technologies, reading about how real world
-              systems are built, and learning from engineers who care about craft and clear
-              communication.
+            <p className="font-display mt-6 text-[24px] md:text-[26px] leading-[2.4rem] text-[#8892b0]">
+              I am always trying to learn how real world systems are built and how good engineers think about design, communication and long term maintainability.
             </p>
 
-            {/* tech list */}
-            <div className="mt-5">
-              <p className="font-display text-[20px] md:text-[22px] leading-[2.1rem] text-[#8892b0]">
-                Here are some technologies I have been working with:
-              </p>
-
-              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-y-1 text-[20px] md:text-[22px] text-[#8892b0]">
-                <ul className="space-y-1">
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>TypeScript</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>React</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>Node and Express</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>PostgreSQL</span>
-                  </li>
-                </ul>
-
-                <ul className="space-y-1">
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>JavaScript ES6+</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>Python</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>C and C++</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>Git and GitHub</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <p className="font-display mt-6 text-[24px] md:text-[26px] leading-[2.4rem] text-[#8892b0]">
+              I am especially interested in projects where I can own a piece of production code, understand how it fits into the larger system and make it a little clearer and easier for the next person who touches it.
+            </p>
           </div>
 
           {/* photo */}
