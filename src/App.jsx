@@ -9,11 +9,13 @@ import StarsBackground from "./components/StarsBackground"
 export default function App() {
   return (
     <div className="relative min-h-screen text-[#ccd6f6]">
-      {/* space background behind EVERYTHING */}
+      {/* global space background behind everything */}
       <StarsBackground />
 
+      {/* starry nav bar with its own opaque background */}
       <NavBar />
 
+      {/* push content below the 64px nav bar */}
       <main className="pt-[64px] min-h-screen overflow-x-hidden">
         <Hero />
         <About />
