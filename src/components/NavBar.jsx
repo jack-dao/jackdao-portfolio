@@ -30,6 +30,7 @@ export default function NavBar() {
           <a href="#about" className="hover:text-[#64ffda]">About</a>
           <a href="#experience" className="hover:text-[#64ffda]">Experience</a>
           <a href="#projects" className="hover:text-[#64ffda]">Projects</a>
+          <a href="#skills" className="hover:text-[#64ffda]">Skills</a>
         </div>
 
         {/* right */}

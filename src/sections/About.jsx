@@ -51,52 +51,14 @@ export default function About() {
               communication.
             </p>
 
-            {/* tech list */}
-            <div className="mt-5">
-              <p className="font-display text-[20px] md:text-[22px] leading-[2.1rem] text-[#8892b0]">
-                Here are some technologies I have been working with:
-              </p>
-
-              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-y-1 text-[20px] md:text-[22px] text-[#8892b0]">
-                <ul className="space-y-1">
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>TypeScript</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>React</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>Node and Express</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>PostgreSQL</span>
-                  </li>
-                </ul>
-
-                <ul className="space-y-1">
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>JavaScript ES6+</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>Python</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>C and C++</span>
-                  </li>
-                  <li className="flex items-center gap-1.5 font-display">
-                    <span className="text-[#64ffda]">▸</span>
-                    <span>Git and GitHub</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <p className="font-display mt-6 text-[20px] md:text-[22px] leading-[2.1rem] text-[#8892b0]">
+              Recently I have been spending most of my time with{" "}
+              <span className="font-semibold text-[#a8b2d1]">TypeScript</span>,{" "}
+              <span className="font-semibold text-[#a8b2d1]">React</span>,{" "}
+              <span className="font-semibold text-[#a8b2d1]">Node and Express</span>, and{" "}
+              <span className="font-semibold text-[#a8b2d1]">PostgreSQL</span>. You can see the rest
+              of my stack in the Skills section below.
+            </p>
           </div>
 
           {/* photo */}
