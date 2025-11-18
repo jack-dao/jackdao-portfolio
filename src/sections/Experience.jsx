@@ -50,12 +50,12 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="pt-16 pb-20 px-6 sm:px-8 lg:px-12"   // was py-24
+      className="pt-16 pb-20 px-6 sm:px-8 lg:px-12"
     >
       <div className="w-full max-w-[1400px] mx-auto">
         {/* title */}
-        <div className="flex items-center gap-4 mb-10">  {/* was mb-12 */}
-          <h2 className="font-display text-[2.4rem] sm:text-[2.8rem] font-bold tracking-tight text-[#c9d6ff]">
+        <div className="flex items-center gap-4 mb-10">
+          <h2 className="font-display text-[2.6rem] sm:text-[3rem] font-bold tracking-tight text-[#c9d6ff]">
             Experiences
           </h2>
           <div className="h-px flex-1 bg-slate-700" />
@@ -73,8 +73,8 @@ export default function Experience() {
                     key={exp.id}
                     onClick={() => setActiveId(exp.id)}
                     className={[
-                      "relative flex w-full items-center pl-6 pr-4 py-3",
-                      "text-xs sm:text-sm tracking-[0.12em] uppercase",
+                      "relative flex w-full items-center pl-6 pr-4 py-3.5",
+                      "text-base sm:text-lg tracking-[0.16em] uppercase",
                       "transition-colors duration-200 cursor-pointer",
                       "outline-none focus-visible:outline-none",
                       isActive
@@ -95,22 +95,22 @@ export default function Experience() {
           {/* details */}
           <div key={activeId} className="space-y-4 animate-experienceEnter">
             <div>
-              <h3 className="font-display text-xl sm:text-2xl font-semibold text-[#c9d6ff]">
+              <h3 className="font-display text-[1.9rem] sm:text-[2.3rem] md:text-[2.5rem] font-semibold text-[#c9d6ff]">
                 {active.role}{" "}
                 <span className="text-[#64ffda]">@ {active.company}</span>
               </h3>
 
-              <p className="mt-2 font-display text-[18px] md:text-[20px] leading-[1.9rem] text-[#8892b0] flex items-center">
+              <p className="mt-2 font-display text-[19px] md:text-[21px] leading-[1.9rem] text-[#8892b0] flex items-center">
                 <span>{active.period}</span>
                 <span className="mx-2 inline-block w-1.5 h-1.5 rounded-full bg-[#8892b0]" />
                 <span>{active.location}</span>
               </p>
             </div>
 
-            <ul className="mt-4 space-y-3 font-display text-[20px] md:text-[22px] leading-[2.1rem] text-[#8892b0] max-w-3xl">
+            <ul className="mt-4 space-y-3 font-display text-[22px] md:text-[24px] leading-[2.2rem] text-[#8892b0] max-w-3xl">
               {active.bullets.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-1.5">
-                  <span className="mt-[4px] text-[#64ffda]">▸</span>
+                  <span className="mt-[6px] text-[#64ffda]">▸</span>
                   <span>{item}</span>
                 </li>
               ))}

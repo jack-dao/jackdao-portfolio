@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="w-full max-w-[1400px] mx-auto">
         {/* title */}
         <div className="flex items-center gap-4 mb-10">  {/* was mb-12 */}
-          <h2 className="font-display text-[2.4rem] sm:text-[2.8rem] font-bold tracking-tight text-[#c9d6ff]">
+          <h2 className="font-display text-[2.6rem] sm:text-[3rem] font-bold tracking-tight text-[#c9d6ff]">
             Projects
           </h2>
           <div className="h-px flex-1 bg-slate-700" />
