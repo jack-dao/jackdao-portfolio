@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react"
 import FractalTree from "../components/FractalTree"
 import { FaEnvelope } from "react-icons/fa"
-import Astronaut from "../assets/astronaut.png"
 
 export default function Hero() {
   const before = "Hello, I'm "
@@ -29,12 +28,10 @@ export default function Hero() {
   return (
     <section className="min-h-[calc(100vh-64px)] flex items-center justify-center">
       <div className="relative w-full max-w-5xl mx-auto text-center px-6">
-        {/* fractal tree */}
         <div className="mx-auto mb-10 scale-125 md:scale-150">
           <FractalTree />
         </div>
 
-        {/* main heading */}
         <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-[#c9d6ff]">
           <span>{tBefore}</span>
           <span className="text-[#64ffda]">{tName}</span>
@@ -42,35 +39,16 @@ export default function Hero() {
           <span className="caret ml-2" />
         </h1>
 
-        {/* astronaut appears after typing completes */}
-        {count >= full.length && (
-          <img
-            src={Astronaut}
-            alt="Astronaut illustration"
-            className="
-              hidden md:block
-              absolute
-              top-1/2 -right-32
-              -translate-y-1/2
-              w-40 h-40 md:w-52 md:h-52
-              astronaut-fx astronaut-glow
-            "
-          />
-        )}
-
-        {/* subheadline */}
         <p className="mt-3 max-w-3xl mx-auto text-2xl sm:text-3xl text-[#8892b0]">
-          I solve problems and create cool stuff.
+          I solve problems problems and create cool stuff.
         </p>
 
-        {/* body copy */}
         <p className="mt-7 max-w-3xl mx-auto text-lg sm:text-xl leading-8 text-[#8892b0]">
           I build full stack apps, backend systems, and little tools that make life easier
           for students and teams. I focus on writing better software and building things
           with real users in mind.
         </p>
 
-        {/* call to action */}
         <a
           href="mailto:jack.dao03@gmail.com"
           className="
