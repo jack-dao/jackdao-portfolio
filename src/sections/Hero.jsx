@@ -65,10 +65,9 @@ export default function Hero() {
 
         {/* body copy */}
         <p className="mt-7 max-w-3xl mx-auto text-lg sm:text-xl leading-8 text-[#8892b0]">
-          I am a 3rd year Computer Science student at UC Santa Cruz. I build full stack
-          apps, backend systems, and little tools that make life easier for students
-          and teams. I focus on writing better software and building things with real
-          users in mind.
+          I build full stack apps, backend systems, and little tools that make life easier
+          for students and teams. I focus on writing better software and building things
+          with real users in mind.
         </p>
 
         {/* call to action */}
