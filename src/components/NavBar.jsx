@@ -41,7 +41,7 @@ export default function NavBar() {
             <FaEnvelope />
           </a>
           <a
-            href="https://github.com/JackDao-cloud"
+            href="https://github.com/jack-dao"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#64ffda]"

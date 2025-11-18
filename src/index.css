@@ -147,22 +147,12 @@ body {
   }
 }
 
-@keyframes astronaut-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* constant float, no fade in */
+.astronaut-float {
+  animation: astronaut-float 3.5s ease-in-out infinite;
 }
 
-/* single class that combines float and fade-in */
-.astronaut-fx {
-  animation:
-    astronaut-float 3.5s ease-in-out infinite,
-    astronaut-fade-in 1.6s ease-out;
-}
-
+/* glow on hover */
 .astronaut-glow {
   transition: transform 0.2s ease, filter 0.2s ease;
 }

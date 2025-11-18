@@ -7,6 +7,7 @@ import Projects from "./sections/Projects"
 import Skills from "./sections/Skills"
 import StarsBackground from "./components/StarsBackground"
 import Footer from "./components/Footer"
+import Contact from "./sections/Contact"
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Experience />
         <Projects />
         <Skills />
+        <Contact />
         <Footer />
       </main>
     </div>
