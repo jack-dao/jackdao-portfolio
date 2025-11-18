@@ -1,6 +1,8 @@
+// src/sections/Hero.jsx
 import { useEffect, useState } from "react"
 import FractalTree from "../components/FractalTree"
 import { FaEnvelope } from "react-icons/fa"
+import Astronaut from "../assets/astronaut.png"
 
 export default function Hero() {
   const before = "Hello, I'm "
@@ -26,12 +28,11 @@ export default function Hero() {
 
   return (
     <section className="min-h-[calc(100vh-64px)] flex items-center justify-center">
-      <div className="w-full max-w-3xl mx-auto text-center px-6">
+      <div className="relative w-full max-w-3xl mx-auto text-center px-6">
         <div className="mx-auto mb-6">
           <FractalTree />
         </div>
 
-        {/* slightly bigger intro */}
         <h1 className="font-display text-[3.9rem] md:text-[4.7rem] font-bold leading-tight tracking-tight text-[#c9d6ff]">
           <span>{tBefore}</span>
           <span className="text-[#64ffda]">{tName}</span>
@@ -39,12 +40,24 @@ export default function Hero() {
           <span className="caret ml-2" />
         </h1>
 
-        {/* slightly bigger subheading hugging the intro */}
+        {count >= full.length && (
+          <img
+            src={Astronaut}
+            alt="Astronaut illustration"
+            className="
+              hidden md:block
+              absolute
+              top-[46%] -right-40
+              w-40 h-40 md:w-48 md:h-48
+              astronaut-fx astronaut-glow
+            "
+          />
+        )}
+
         <p className="mt-1 max-w-2xl mx-auto text-[1.55rem] md:text-[1.7rem] text-[#8892b0]">
           I like solving problems and creating cool stuff.
         </p>
 
-        {/* smaller paragraph, same color as subheading */}
         <p className="mt-6 max-w-2xl mx-auto text-[15px] md:text-[16px] leading-7 text-[#8892b0]">
           I’m a 3rd year Computer Science student at UC Santa Cruz who likes building
           full stack apps, backend systems, and little tools that make life easier for
@@ -65,7 +78,6 @@ export default function Hero() {
           aria-label="Email Jack"
         >
           <FaEnvelope className="h-7 w-7" aria-hidden="true" />
-
           <span className="text-[20px] font-semibold leading-none">
             Let's connect!
           </span>

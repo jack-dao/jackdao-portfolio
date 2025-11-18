@@ -116,7 +116,7 @@ body {
   );
   filter: blur(2px);
   opacity: 0;
-  animation: shooting-star 1.4s ease-out forwards;
+  animation: shooting-star 2s ease-out forwards;
 }
 
 @keyframes shooting-star {
@@ -134,4 +134,40 @@ body {
     transform: translate3d(120vw, 28vh, 0) rotateZ(18deg);
     opacity: 0;
   }
+}
+
+/* astronaut animations */
+@keyframes astronaut-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes astronaut-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* single class that combines float and fade-in */
+.astronaut-fx {
+  animation:
+    astronaut-float 3.5s ease-in-out infinite,
+    astronaut-fade-in 1.6s ease-out;
+}
+
+.astronaut-glow {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.astronaut-glow:hover {
+  filter: drop-shadow(0 0 14px rgba(100, 255, 218, 0.7));
+  transform: translateY(-2px) scale(1.06);
 }
