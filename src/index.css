@@ -121,7 +121,7 @@ body {
 
 @keyframes shooting-star {
   0% {
-    transform: translate3d(0, 0, 0) rotateZ(18deg);
+    transform: translate3d(0, 0, 0) rotateZ(var(--angle, 18deg));
     opacity: 0;
   }
   15% {
@@ -131,7 +131,8 @@ body {
     opacity: 0.4;
   }
   100% {
-    transform: translate3d(120vw, 28vh, 0) rotateZ(18deg);
+    transform: translate3d(120vw, var(--driftY, 28vh), 0)
+      rotateZ(var(--angle, 18deg));
     opacity: 0;
   }
 }
