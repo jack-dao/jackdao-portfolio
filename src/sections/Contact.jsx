@@ -70,7 +70,7 @@ export default function Contact() {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="/Jack%20Dao%20-%20Resume.pdf"
+                  href="/jack-dao-resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-[#64ffda] transition"

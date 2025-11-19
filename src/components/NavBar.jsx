@@ -59,7 +59,7 @@ export default function NavBar() {
             <FaLinkedin />
           </a>
           <a
-            href="/Jack%20Dao%20-%20Resume.pdf"
+            href="/jack-dao-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#64ffda]"
