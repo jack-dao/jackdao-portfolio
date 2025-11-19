@@ -89,9 +89,9 @@ export default function Contact() {
               alt=""
               aria-hidden="true"
               className="
-                w-48 sm:w-56 lg:w-64
+                w-40 sm:w-48 lg:w-56
                 opacity-80
-                select-none
+                pointer-events-none select-none
                 astronaut-float astronaut-glow
               "
             />
