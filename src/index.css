@@ -147,17 +147,18 @@ body {
   }
 }
 
-/* constant float, no fade in */
+/* constant float */
 .astronaut-float {
   animation: astronaut-float 3.5s ease-in-out infinite;
 }
 
-/* glow on hover */
+/* elements that are allowed to glow */
 .astronaut-glow {
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.astronaut-glow:hover {
-  filter: drop-shadow(0 0 14px rgba(100, 255, 218, 0.7));
-  transform: translateY(-2px) scale(1.06);
+/* when hovering anywhere over the cluster, glow both card and astronaut */
+.contact-orbit:hover .astronaut-glow {
+  filter: drop-shadow(0 0 20px rgba(100, 255, 218, 0.9));
+  transform: translateY(-2px) scale(1.04);
 }

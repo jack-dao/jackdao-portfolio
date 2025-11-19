@@ -82,19 +82,54 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* right: decorative astronaut */}
-          <div className="hidden md:flex justify-start lg:justify-start">
-            <img
-              src={Astronaut}
-              alt=""
-              aria-hidden="true"
-              className="
-                w-40 sm:w-48 lg:w-56
-                opacity-80
-                pointer-events-none select-none
-                astronaut-float astronaut-glow
-              "
-            />
+          {/* right: info cloud to the left, astronaut to the right */}
+          <div className="hidden md:flex justify-end lg:justify-end">
+            <div className="contact-orbit flex items-center gap-6 lg:gap-8 -translate-y-4">
+              {/* info card */}
+              <div
+                className="
+                  w-80 sm:w-[22rem]
+                  rounded-2xl border border-[#64ffda]/60
+                  bg-[#020c1b]/85 backdrop-blur
+                  px-7 py-6 sm:px-8 sm:py-7
+                  shadow-[0_0_25px_rgba(100,255,218,0.25)]
+                  astronaut-glow
+                "
+              >
+                <p className="text-[0.75rem] sm:text-sm font-semibold tracking-[0.18em] uppercase text-[#64ffda] mb-4">
+                  What I enjoy working on
+                </p>
+                <div className="flex flex-wrap gap-3 text-[0.8rem] sm:text-sm text-slate-200">
+                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                    Clean, responsive UIs
+                  </span>
+                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                    Full stack web apps
+                  </span>
+                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                    Tools that help students
+                  </span>
+                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                    Data driven features
+                  </span>
+                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                    Polished UX details
+                  </span>
+                </div>
+              </div>
+
+              <img
+                src={Astronaut}
+                alt=""
+                aria-hidden="true"
+                className="
+                  w-48 sm:w-56 lg:w-64
+                  opacity-80
+                  select-none
+                  astronaut-float astronaut-glow
+                "
+              />
+            </div>
           </div>
         </div>
       </div>
