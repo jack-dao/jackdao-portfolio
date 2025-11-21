@@ -59,6 +59,7 @@ export default function About() {
               <img
                 src={Portrait}
                 alt="Jack Dao"
+                draggable={false}
                 className="w-full h-full object-cover object-top"
               />
             </div>
