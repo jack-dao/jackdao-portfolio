@@ -40,7 +40,7 @@ export default function Hero() {
         </h1>
 
         <p className="mt-3 max-w-3xl mx-auto text-2xl sm:text-3xl text-[#8892b0]">
-          I solve problems problems and create cool stuff.
+          I solve problems and create cool stuff.
         </p>
 
         <p className="mt-7 max-w-3xl mx-auto text-lg sm:text-xl leading-8 text-[#8892b0]">
