@@ -1,4 +1,3 @@
-// src/sections/Skills.jsx
 import { useState } from "react"
 import {
   SiHtml5,
@@ -13,7 +12,6 @@ import {
   SiCplusplus,
   SiGit,
   SiGithub,
-  // New imports
   SiSupabase,
   SiSocketdotio,
   SiGithubactions,
@@ -29,12 +27,20 @@ import {
   SiPandas
 } from "react-icons/si"
 
+import { 
+  FaExchangeAlt, 
+  FaProjectDiagram, 
+  FaNetworkWired, 
+  FaBrain 
+} from "react-icons/fa"
+
 const categories = [
   { id: "languages", label: "Programming Languages" },
   { id: "frontend", label: "Frontend" },
   { id: "backend", label: "Backend" },
   { id: "datascience", label: "Data Science & ML" },
-  { id: "tools", label: "Tools and Platforms" }
+  { id: "tools", label: "Tools and Platforms" },
+  { id: "concepts", label: "Architecture & Concepts" }
 ]
 
 const skillsByCategory = {
@@ -73,6 +79,12 @@ const skillsByCategory = {
     { name: "Vercel", icon: SiVercel },
     { name: "Vite", icon: SiVite },
     { name: "Vitest", icon: SiVitest }
+  ],
+  concepts: [
+    { name: "REST API Design", icon: FaExchangeAlt },
+    { name: "Database Schema Design", icon: FaProjectDiagram },
+    { name: "Client-Server Architecture", icon: FaNetworkWired },
+    { name: "Retrieval-Augmented Generation (RAG)", icon: FaBrain }
   ]
 }
 
@@ -116,7 +128,7 @@ export default function Skills() {
                     outline-none focus:outline-none focus-visible:outline-none
                   "
                 >
-                  {/*kv vertical bar */}
+                  {/* vertical bar */}
                   <div
                     className={
                       "w-[4px] h-10 rounded-full transition-colors " +
@@ -158,7 +170,7 @@ export default function Skills() {
                   "
                 >
                   <Icon className="text-4xl text-[#64ffda]" />
-                  <span className="text-[18px] text-slate-200 font-display">
+                  <span className="text-[18px] text-slate-200 font-display text-center px-2">
                     {skill.name}
                   </span>
                 </div>
