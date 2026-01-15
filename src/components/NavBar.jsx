@@ -1,5 +1,5 @@
 // src/components/NavBar.jsx
-import { FaGithub, FaLinkedin, FaEnvelope, FaPen } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 export default function NavBar() {
   return (
@@ -58,15 +58,6 @@ export default function NavBar() {
             aria-label="LinkedIn"
           >
             <FaLinkedin />
-          </a>
-          <a
-            href="/jack-dao-resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-[#64ffda]"
-            aria-label="Resume"
-          >
-            <FaPen />
           </a>
         </div>
       </div>

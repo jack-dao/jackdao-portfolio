@@ -12,13 +12,28 @@ import {
   SiC,
   SiCplusplus,
   SiGit,
-  SiGithub
+  SiGithub,
+  // New imports
+  SiSupabase,
+  SiSocketdotio,
+  SiGithubactions,
+  SiLinux,
+  SiVercel,
+  SiVite,
+  SiVitest,
+  SiDocker,
+  SiPrisma,
+  SiTailwindcss,
+  SiNumpy,
+  SiScikitlearn,
+  SiPandas
 } from "react-icons/si"
 
 const categories = [
   { id: "languages", label: "Programming Languages" },
   { id: "frontend", label: "Frontend" },
   { id: "backend", label: "Backend" },
+  { id: "datascience", label: "Data Science & ML" },
   { id: "tools", label: "Tools and Platforms" }
 ]
 
@@ -33,16 +48,31 @@ const skillsByCategory = {
   frontend: [
     { name: "React", icon: SiReact },
     { name: "HTML", icon: SiHtml5 },
-    { name: "CSS", icon: SiCss3 }
+    { name: "CSS", icon: SiCss3 },
+    { name: "Tailwind CSS", icon: SiTailwindcss }
   ],
   backend: [
     { name: "Node", icon: SiNodedotjs },
     { name: "Express", icon: SiNodedotjs },
-    { name: "PostgreSQL", icon: SiPostgresql }
+    { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "Supabase", icon: SiSupabase },
+    { name: "Socket.io", icon: SiSocketdotio },
+    { name: "Prisma", icon: SiPrisma }
+  ],
+  datascience: [
+    { name: "NumPy", icon: SiNumpy },
+    { name: "Pandas", icon: SiPandas },
+    { name: "Scikit-learn", icon: SiScikitlearn }
   ],
   tools: [
     { name: "Git", icon: SiGit },
-    { name: "GitHub", icon: SiGithub }
+    { name: "GitHub", icon: SiGithub },
+    { name: "GitHub Actions", icon: SiGithubactions },
+    { name: "Docker", icon: SiDocker },
+    { name: "Linux", icon: SiLinux },
+    { name: "Vercel", icon: SiVercel },
+    { name: "Vite", icon: SiVite },
+    { name: "Vitest", icon: SiVitest }
   ]
 }
 
@@ -86,7 +116,7 @@ export default function Skills() {
                     outline-none focus:outline-none focus-visible:outline-none
                   "
                 >
-                  {/* vertical bar */}
+                  {/*kv vertical bar */}
                   <div
                     className={
                       "w-[4px] h-10 rounded-full transition-colors " +
