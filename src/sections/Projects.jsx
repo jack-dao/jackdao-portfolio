@@ -1,21 +1,24 @@
 // src/sections/Projects.jsx
 import { FiGithub, FiExternalLink, FiFolder } from "react-icons/fi"
 
+// ⚡️ Import the image from your assets folder
+import scheduleViewImg from "../assets/schedule-view.png"
+
 const projects = [
   {
-    title: "Future full stack project",
-    timeframe: "Coming soon",
+    title: "AI Slug Navigator",
+    timeframe: "January 2026",
     blurb:
-      "A full stack web app that turns an idea into a small tool people can actually use.",
-    tech: ["React", "TypeScript", "Node", "PostgreSQL"],
+      "A comprehensive course planning platform for UCSC students integrating real-time search, interactive schedule building, and AI-powered academic advising.",
+    tech: ["React", "Node.js", "Express", "PostgreSQL", "Google Gemini API", "GitHub Actions"],
     bullets: [
-      "Focus on clean, readable code and a simple product that solves one clear problem.",
-      "End to end implementation from database and API to polished frontend UI.",
-      "Write up and code links will go here once the project is ready to share."
+      "Engineered a RAG-based scheduling assistant using the Google Gemini API, generating conflict-free course plans by contextually retrieving live catalog data.",
+      "Built a high-concurrency Node.js scraper to ingest 1,500+ course records into PostgreSQL, enabling instant search and interactive schedule building.",
+      "Automated a nightly ETL pipeline using GitHub Actions to sync professor ratings, ensuring data freshness without manual intervention."
     ],
-    github: "",
-    demo: "",
-    image: null
+    github: "https://github.com/jack-dao/ai-slug-navigator",
+    demo: "https://aislugnavigator.com",
+    image: scheduleViewImg
   },
   {
     title: "Future systems project",
@@ -51,13 +54,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="pt-16 pb-20 px-6 sm:px-8 lg:px-12"  // was py-24
-    >
+    <section id="projects" className="pt-16 pb-20 px-6 sm:px-8 lg:px-12">
       <div className="w-full max-w-[1400px] mx-auto">
         {/* title */}
-        <div className="flex items-center gap-4 mb-10">  {/* was mb-12 */}
+        <div className="flex items-center gap-4 mb-10">
           <h2 className="font-display text-[2.6rem] sm:text-[3rem] font-bold tracking-tight text-[#c9d6ff]">
             Projects
           </h2>
@@ -71,13 +71,25 @@ export default function Projects() {
               className="relative flex flex-col bg-[#09172a] border border-slate-800/80 rounded-3xl shadow-[0_18px_50px_rgba(0,0,0,0.6)] hover:border-[#64ffda] hover:shadow-[0_0_40px_rgba(100,255,218,0.25)] hover:-translate-y-1 transition-transform transition-shadow duration-300 overflow-hidden"
             >
               {/* image area */}
-              <div className="relative w-full aspect-[5/4] overflow-hidden">
+              <div className="relative w-full aspect-video overflow-hidden group bg-[#020c1b]">
                 {project.image ? (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
+                  <>
+                    {/* blurred backdrop */}
+                    <img
+                      src={project.image}
+                      alt=""
+                      aria-hidden="true"
+                      className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-35"
+                    />
+                    <div className="absolute inset-0 bg-[#020c1b]/40" />
+
+                    {/* foreground image */}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="relative z-10 w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                  </>
                 ) : (
                   <div className="w-full h-full bg-gradient-to-tr from-[#112240] via-[#0b2238] to-[#64ffda]/25 flex items-center justify-center">
                     <div className="flex flex-col items-center gap-3 text-[#a8b2d1]">
@@ -110,9 +122,7 @@ export default function Projects() {
                 <ul className="space-y-2 text-[0.97rem] text-[#a8b2d1]">
                   {project.bullets.map(line => (
                     <li key={line} className="flex gap-2">
-                      <span className="mt-[3px] text-[#64ffda] text-xs">
-                        ▸
-                      </span>
+                      <span className="mt-[3px] text-[#64ffda] text-xs">▸</span>
                       <span>{line}</span>
                     </li>
                   ))}
@@ -142,9 +152,7 @@ export default function Projects() {
                         <span>Code</span>
                       </a>
                     ) : (
-                      <span className="opacity-70">
-                        Code link coming soon
-                      </span>
+                      <span className="opacity-70">Code link coming soon</span>
                     )}
 
                     {project.demo && (
