@@ -3,19 +3,6 @@ import { useState } from "react"
 
 const experiences = [
   {
-    id: "wilmers",
-    company: "Wilmers Lab",
-    role: "Software Engineer Intern",
-    location: "Santa Cruz, CA",
-    period: "Sep 2025 – Present",
-    bullets: [
-      "Built a Python desktop GUI for schedule setup, run control, and CSV log export for a wildlife predator deterrence speaker.",
-      "Implemented UART and Bluetooth command response in C with ACK and timeout retries, cutting command failures by about 30 percent.",
-      "Delivered CSV logs and faster workflows so 4 plus researchers can run 10 to 15 experiments each week without manual log wrangling.",
-      "Added schedule import and export with validation and overlap checks to prevent invalid runs and operator errors."
-    ]
-  },
-  {
     id: "knobull",
     company: "Knobull",
     role: "Software Engineer Intern",
