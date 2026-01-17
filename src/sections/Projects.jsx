@@ -1,7 +1,5 @@
-// src/sections/Projects.jsx
 import { FiGithub, FiExternalLink, FiFolder } from "react-icons/fi"
 
-// ⚡️ Import the image from your assets folder
 import scheduleViewImg from "../assets/schedule-view.png"
 
 const projects = [
@@ -79,7 +77,8 @@ export default function Projects() {
                       src={project.image}
                       alt=""
                       aria-hidden="true"
-                      className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-35"
+                      draggable="false"
+                      className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-35 select-none"
                     />
                     <div className="absolute inset-0 bg-[#020c1b]/40" />
 
@@ -87,7 +86,8 @@ export default function Projects() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="relative z-10 w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                      draggable="false"
+                      className="relative z-10 w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.02] select-none"
                     />
                   </>
                 ) : (
