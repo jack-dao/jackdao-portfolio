@@ -1,4 +1,3 @@
-// src/sections/Contact.jsx
 import { FaEnvelope, FaGithub, FaLinkedin, FaPen } from "react-icons/fa"
 import Astronaut from "../assets/astronaut.png"
 
