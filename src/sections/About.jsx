@@ -3,10 +3,7 @@ import Portrait from "../assets/Portrait.jpg"
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="pt-20 pb-16 px-6 sm:px-8 lg:px-12"
-    >
+    <section id="about" className="pt-20 pb-16 px-6 sm:px-8 lg:px-12">
       <div className="w-full max-w-[1400px] mx-auto">
         {/* title */}
         <div className="flex items-center gap-4 mb-12">
@@ -32,16 +29,8 @@ export default function About() {
                 UC Santa Cruz
               </a>{" "}
               and a{" "}
-              <span className="font-semibold text-[#a8b2d1]">Software Engineer Intern</span> at{" "}
-              <a
-                href="https://wildlife.ucsc.edu/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold text-[#64ffda] hover:underline"
-              >
-                Wilmers Lab
-              </a>
-              . I enjoy building things that are simple, useful and reliable, from small tools to full stack applications.
+              <span className="font-semibold text-[#a8b2d1]">former Software Engineer Intern</span> at{" "}
+              <span className="font-semibold text-[#64ffda]">Knobull</span>. I enjoy building things that are simple, useful and reliable, from small tools to full stack applications.
             </p>
 
             <p className="font-display mt-6 text-[24px] md:text-[26px] leading-[2.4rem] text-[#8892b0]">
