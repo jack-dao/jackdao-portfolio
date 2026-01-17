@@ -16,13 +16,13 @@ export default function NavBar() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(100,255,218,0.14),_transparent_60%),radial-gradient(circle_at_18%_80%,_rgba(56,189,248,0.09),_transparent_55%),radial-gradient(circle_at_82%_75%,_rgba(147,197,253,0.09),_transparent_55%)]" />
       </div>
 
-      <div className="mx-auto max-w-6xl px-6 h-full grid grid-cols-3 items-center">
+      <div className="mx-auto max-w-6xl px-6 h-full grid grid-cols-2 sm:grid-cols-3 items-center">
         {/* left */}
         <div className="font-display text-lg md:text-xl font-semibold justify-self-start">
           Jack Dao
         </div>
 
-        {/* middle */}
+        {/* middle - hidden on mobile */}
         <div className="hidden sm:flex justify-self-center items-center gap-8 text-base">
           <a href="#home" className="hover:text-[#64ffda]">Home</a>
           <a href="#about" className="hover:text-[#64ffda]">About</a>
@@ -32,7 +32,7 @@ export default function NavBar() {
           <a href="#contact" className="hover:text-[#64ffda]">Contact</a>
         </div>
 
-        {/* right */}
+        {/* right - in mobile column 2 (right side), in desktop column 3 (right side) */}
         <div className="justify-self-end flex items-center gap-4 text-xl">
           <a
             href="mailto:jack.dao03@gmail.com"
