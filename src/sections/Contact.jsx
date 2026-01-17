@@ -32,57 +32,70 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="flex flex-col items-start gap-6">
-              <a
-                href="mailto:jack.dao03@gmail.com"
-                className="
-                  inline-flex items-center gap-2
-                  rounded-xl px-5 py-3
-                  text-sm sm:text-base font-semibold
-                  bg-[#64ffda]/10 text-[#64ffda]
-                  border border-[#64ffda]/40
-                  shadow-[0_0_25px_rgba(100,255,218,0.2)]
-                  hover:bg-[#64ffda]/20 hover:border-[#64ffda]
-                  transition
-                "
-              >
-                <FaEnvelope className="text-xl" />
-                <span>Email me</span>
-              </a>
+            {/* Actions + Mobile Astronaut Container */}
+            <div className="flex items-center justify-between sm:justify-start sm:gap-12">
+              <div className="flex flex-col items-start gap-6">
+                <a
+                  href="mailto:jack.dao03@gmail.com"
+                  className="
+                    inline-flex items-center gap-2
+                    rounded-xl px-5 py-3
+                    text-sm sm:text-base font-semibold
+                    bg-[#64ffda]/10 text-[#64ffda]
+                    border border-[#64ffda]/40
+                    shadow-[0_0_25px_rgba(100,255,218,0.2)]
+                    hover:bg-[#64ffda]/20 hover:border-[#64ffda]
+                    transition
+                  "
+                >
+                  <FaEnvelope className="text-xl" />
+                  <span>Email me</span>
+                </a>
 
-              <div className="flex items-center gap-6 text-3xl text-slate-300">
-                <a
-                  href="https://github.com/jack-dao"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-[#64ffda] transition"
-                  aria-label="GitHub"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/jack-dao/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-[#64ffda] transition"
-                  aria-label="LinkedIn"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="/jack-dao-resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-[#64ffda] transition"
-                  aria-label="Resume"
-                >
-                  <FaPen />
-                </a>
+                <div className="flex items-center gap-6 text-3xl text-slate-300">
+                  <a
+                    href="https://github.com/jack-dao"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[#64ffda] transition"
+                    aria-label="GitHub"
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/jack-dao/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[#64ffda] transition"
+                    aria-label="LinkedIn"
+                  >
+                    <FaLinkedin />
+                  </a>
+                  <a
+                    href="/jack-dao-resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[#64ffda] transition"
+                    aria-label="Resume"
+                  >
+                    <FaPen />
+                  </a>
+                </div>
+              </div>
+
+              {/* MOBILE ONLY ASTRONAUT - Increased size here */}
+              <div className="block md:hidden">
+                <img
+                  src={Astronaut}
+                  alt=""
+                  aria-hidden="true"
+                  className="w-44 sm:w-52 astronaut-float opacity-80 select-none"
+                />
               </div>
             </div>
           </div>
 
-          {/* right: info cloud to the left, astronaut to the right */}
+          {/* right: info cloud + desktop astronaut (HIDDEN ON MOBILE) */}
           <div className="hidden md:flex justify-end lg:justify-end">
             <div className="contact-orbit flex items-center gap-6 lg:gap-8 -translate-y-4">
               {/* info card */}
@@ -94,30 +107,34 @@ export default function Contact() {
                   px-7 py-6 sm:px-8 sm:py-7
                   shadow-[0_0_25px_rgba(100,255,218,0.25)]
                   astronaut-glow
+                  hover:-translate-y-2 hover:border-[#64ffda] hover:shadow-[0_0_40px_rgba(100,255,218,0.4)]
+                  transition-all duration-300
+                  cursor-pointer
                 "
               >
                 <p className="text-[0.75rem] sm:text-sm font-semibold tracking-[0.18em] uppercase text-[#64ffda] mb-4">
                   What I enjoy working on
                 </p>
                 <div className="flex flex-wrap gap-3 text-[0.8rem] sm:text-sm text-slate-200">
-                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                  <span className="rounded-lg border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5 hover:bg-slate-800 transition-colors">
                     Clean, responsive UIs
                   </span>
-                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                  <span className="rounded-lg border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5 hover:bg-slate-800 transition-colors">
                     Full stack web apps
                   </span>
-                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                  <span className="rounded-lg border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5 hover:bg-slate-800 transition-colors">
                     Tools that help students
                   </span>
-                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                  <span className="rounded-lg border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5 hover:bg-slate-800 transition-colors">
                     Data driven features
                   </span>
-                  <span className="rounded-full border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5">
+                  <span className="rounded-lg border border-slate-600/80 bg-slate-900/60 px-3.5 py-1.5 hover:bg-slate-800 transition-colors">
                     Polished UX details
                   </span>
                 </div>
               </div>
 
+              {/* desktop astronaut */}
               <img
                 src={Astronaut}
                 alt=""
@@ -127,6 +144,8 @@ export default function Contact() {
                   opacity-80
                   select-none
                   astronaut-float astronaut-glow
+                  hover:scale-110 transition-transform duration-300
+                  cursor-pointer
                 "
               />
             </div>
