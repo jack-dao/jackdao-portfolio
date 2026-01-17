@@ -1,4 +1,3 @@
-// src/sections/Hero.jsx
 import { useEffect, useState } from "react"
 import FractalTree from "../components/FractalTree"
 import { FaEnvelope } from "react-icons/fa"
@@ -26,17 +25,19 @@ export default function Hero() {
   const tAfter = typed.slice(Math.max(before.length + name.length, 0))
 
   return (
-    <section className="min-h-[calc(100vh-64px)] flex items-center justify-center">
-      <div className="relative w-full max-w-5xl mx-auto text-center px-6">
-        <div className="mx-auto mb-10 scale-125 md:scale-150">
+    <section className="min-h-[calc(100vh-64px)] flex items-start md:items-center justify-center">
+      <div className="relative w-full max-w-5xl mx-auto text-center px-6 pt-8 md:pt-0">
+        <div className="mx-auto mb-6 scale-125 md:scale-150">
           <FractalTree />
         </div>
 
-        <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-[#c9d6ff]">
+        <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-[#c9d6ff]">
           <span>{tBefore}</span>
-          <span className="text-[#64ffda]">{tName}</span>
-          <span>{tAfter}</span>
-          <span className="caret ml-2" />
+          <span className="whitespace-nowrap">
+            <span className="text-[#64ffda]">{tName}</span>
+            <span>{tAfter}</span>
+            <span className="caret ml-1" />
+          </span>
         </h1>
 
         <p className="mt-3 max-w-3xl mx-auto text-2xl sm:text-3xl text-[#8892b0]">

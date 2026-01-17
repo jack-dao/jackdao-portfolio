@@ -1,3 +1,4 @@
+// src/sections/Skills.jsx
 import { useState } from "react"
 import {
   SiHtml5,
@@ -153,15 +154,15 @@ export default function Skills() {
             })}
           </div>
 
-          {/* cards */}
-          <div className="flex flex-wrap gap-8">
+          {/* cards: Changed to Grid on mobile, Flex on Desktop */}
+          <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-8">
             {activeSkills.map(skill => {
               const Icon = skill.icon
               return (
                 <div
                   key={skill.name}
                   className="
-                    w-[190px] h-[160px]
+                    w-full md:w-[190px] h-[140px] md:h-[160px]
                     bg-slate-950/70 border border-slate-800/80 rounded-2xl
                     flex flex-col items-center justify-center gap-4
                     shadow-xl shadow-black/50 backdrop-blur-sm
@@ -169,8 +170,8 @@ export default function Skills() {
                     transition-transform transition-colors
                   "
                 >
-                  <Icon className="text-4xl text-[#64ffda]" />
-                  <span className="text-[18px] text-slate-200 font-display text-center px-2">
+                  <Icon className="text-3xl md:text-4xl text-[#64ffda]" />
+                  <span className="text-[15px] md:text-[18px] text-slate-200 font-display text-center px-2">
                     {skill.name}
                   </span>
                 </div>
