@@ -1,12 +1,9 @@
-import { FaEnvelope, FaGithub, FaLinkedin, FaPen } from "react-icons/fa"
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
 import Astronaut from "../assets/astronaut.png"
 
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="pt-24 pb-32 px-6 sm:px-8 lg:px-12"
-    >
+    <section id="contact" className="pt-24 pb-32 px-6 sm:px-8 lg:px-12">
       <div className="w-full max-w-[1400px] mx-auto">
         {/* title row */}
         <div className="flex items-center gap-4 mb-10">
@@ -70,19 +67,10 @@ export default function Contact() {
                   >
                     <FaLinkedin />
                   </a>
-                  <a
-                    href="/jack-dao-resume.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-[#64ffda] transition"
-                    aria-label="Resume"
-                  >
-                    <FaPen />
-                  </a>
                 </div>
               </div>
 
-              {/* MOBILE ONLY ASTRONAUT - Increased size here */}
+              {/* MOBILE ONLY ASTRONAUT */}
               <div className="block md:hidden">
                 <img
                   src={Astronaut}
