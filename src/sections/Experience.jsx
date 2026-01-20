@@ -9,10 +9,9 @@ const experiences = [
     location: "Remote",
     period: "Jun 2025 – Sep 2025",
     bullets: [
-      "Built a real time mentor chat app with React, Node and Express, Socket IO, and PostgreSQL serving over 1 000 students.",
-      "Modernized the React UI with responsive layouts and accessibility fixes to improve cross device usability.",
-      "Scaled an Elasticsearch academic search engine to more than 5 million sources with ad and SEO filtering for 5 000 plus searches.",
-      "Integrated Stripe checkout and Firebase Authentication for subscriptions and cross device single sign on."
+      "Enabled the company’s first revenue stream by engineering a secure payment flow with Stripe Checkout and Supabase Auth, facilitating paid subscriptions and robust session management.",
+      "Developed a real-time chat app using Socket.IO, React, and Node.js, handling concurrent mentor-student sessions with reliable message delivery.",
+      "Automated cloud deployments on AWS using GitHub Actions for CI/CD, reducing production downtime andstreamlining the testing pipeline."
     ]
   },
   {
