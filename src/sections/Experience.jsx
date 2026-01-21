@@ -14,19 +14,6 @@ const experiences = [
       "Automated cloud deployments on AWS using GitHub Actions for CI/CD, reducing production downtime andstreamlining the testing pipeline."
     ]
   },
-  {
-    id: "tech4good",
-    company: "Tech4Good Lab",
-    role: "Full Stack Web Developer",
-    location: "Santa Cruz, CA",
-    period: "Mar 2025 – Sep 2025",
-    bullets: [
-      "Built a student onboarding app in Angular with TypeScript and NgRx that reduced onboarding time about 40 percent for 30 plus users.",
-      "Developed a task manager app on Firebase with Angular and NgRx to organize tasks and deadlines for student teams.",
-      "Implemented NgRx Store and Effects with optimistic updates, caching, and error handling to improve UI stability.",
-      "Set up Firebase Authorization and Firestore security rules for role based access and per user data isolation."
-    ]
-  }
 ]
 
 export default function Experience() {
