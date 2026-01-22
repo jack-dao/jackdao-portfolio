@@ -1,4 +1,3 @@
-// src/sections/Experience.jsx
 import { useState } from "react"
 
 const experiences = [
