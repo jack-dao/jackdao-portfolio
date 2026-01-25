@@ -1,4 +1,3 @@
-// src/components/NavBar.jsx
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 export default function NavBar() {
