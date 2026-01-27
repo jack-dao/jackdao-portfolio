@@ -1,4 +1,3 @@
-// src/sections/Skills.jsx
 import { useState } from "react"
 import {
   SiHtml5,
